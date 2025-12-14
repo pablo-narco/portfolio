@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+            <li><a href="#" onclick="showPage('github')" class="nav-link">GitHub</a></li>
+            <li><a href="#" onclick="showPage('contacts')" class="nav-link">Contacts</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <div id="home" class="page active">
+            <h1>Welcome to my Portfolio Page</h1>
+            
+            <div class="info-section">
+                <h3>About me</h3>
+                <p>Junior Java Developer with 2 years of commercial experience in backend development.
+Proficient in Java, Spring (Spring Boot, Spring MVC, Spring Data), Hibernate/JPA, and building RESTful APIs.
+Strong experience working with relational databases such as PostgreSQL and MySQL, including database design and optimization.
+Familiar with SQL, Maven/Gradle, Git, and basic Docker usage.
+Basic knowledge of frontend technologies (HTML, CSS, JavaScript) and experience integrating frontend with backend services.
+Focused on writing clean, maintainable code and continuously improving backend and system design skills.</p>
+            </div>
+
+            <div class="info-section">
+                <h3>Skills</h3>
+                <p><strong>Frontend:</strong> HTML, CSS, JavaScript, React</p>
+                <p><strong>Backend:</strong> Node.js, Java</p>
+                <p><strong>Инструменты:</strong> Git, GitHub, VS Code</p>
+            </div>
+
+            <div class="info-section">
+                <h3>Experince</h3>
+                <p>Junior Java Developer with 2 years of backend development experience, including a 5-month internship at a Moroccan IT company.
+Experienced in Java, Spring (Spring Boot, Spring MVC, Spring Data), Hibernate/JPA, and developing RESTful APIs.
+Worked with relational databases such as PostgreSQL and MySQL, including schema design and query optimization.
+Familiar with SQL, Maven/Gradle, Git, and basic Docker.
+Basic knowledge of frontend technologies (HTML, CSS, JavaScript) and experience integrating frontend with backend services.
+Motivated, fast learner with a strong focus on clean code, backend architecture, and continuous professional growth.</p>
+            </div>
+        </div>
+
+        <div id="github" class="page">
+            <h1>My GitHub</h1>
+            <p>Here you can get to my open source project</p>
+            
+            <a href="https://github.com/pablo-narco" class="github-link" target="_blank">
+                Visit to my GitHub profile →
+            </a>
+
+            <h2>Projects</h2>
+            <div class="projects">
+                <a href="https://pablo-narco.github.io/task-1/" class="project-btn" target="_blank">
+                    Task 1
+                </a>
+                <a href="https://pablo-narco.github.io/task2/" class="project-btn" target="_blank">
+                    Task 2
+                </a>
+                <a href="https://github.com/pablo-narco/study-smart-ai" class="project-btn" target="_blank">
+                    Mini Project 
+                </a>
+            </div>
+        </div>
+
+        <div id="contacts" class="page">
+            <h1>Countact with me</h1>
+            <p>If you have a question send me a message!</p>
+
+            <form class="contact-form" onsubmit="handleSubmit(event)">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your email" required>
+                <input type="text" name="subject" placeholder="Subject" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
